@@ -24,7 +24,7 @@ test.describe('Form Layouts page', () => {
         await expect(usingTheGridEmailInput).toHaveValue('test2@test.com')
     })
 
-    test('adio buttons', async ({ page }) => {
+    test('radio buttons', async ({ page }) => {
         const usingTheGridForm = page.locator('nb-card', { hasText: 'Using the Grid' })
 
         await usingTheGridForm.getByLabel('Option 1').check({ force: true })
